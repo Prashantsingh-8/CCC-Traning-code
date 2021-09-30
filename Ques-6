@@ -1,0 +1,19 @@
+Q-6) Given an array of size N and an integer X, Raju wants to know how many elements in the array are divisible by X. Help him find the answer. Input Format First line contains 2 integers N and X. Second line contains N integers, the array arr[N]. 1 <= N <= 100 1 <= arr[i], X <= 100 Output Format One number denoting the count of elements that are divisible by X.
+ Sample Input 0
+ 5 2
+ 2 4 3 2 1
+ Sample Output 0
+ 3
+
+CODE:
+#include <stdio.h>
+ int main() {
+ int a,b,i,c=0,arr[100];
+ scanf("%d%d",&a,&b);
+ for(i=0;i<a;i++) {
+ scanf("%d",&arr[i]);
+ if(arr[i]%b==0) c+=1;
+ }
+ printf("%d",c);
+ return 0;
+ }
