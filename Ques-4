@@ -1,0 +1,40 @@
+Q-4)   You are given one number N. You must write a program to test whether the given number is prime or not. NOTE : A prime number is such a number that has only two factors : i.e. 1 and itself. 1 is not a prime number. Input Format First line contains one number, N. Constraints 1 <= N <= 10^5 Output Format Output "yes" if N is a prime number and "no" otherwise. (without the quotes) 
+Sample Input 0 
+5 Sample Output 0 
+Yes
+ Sample Input 1
+ 12
+ Sample Output 1
+ No
+
+
+CODE:
+#include <stdio.h>
+ #include <string.h>
+ #include <math.h> 
+#include <stdlib.h>
+ int isprime(unsigned long n) { 
+    if(n==2 || n==3)
+ return 1;   
+  if(n==1 || n%2==0 || n%3==0)
+return 0;   
+  for(unsigned long i=5;i<=sqrt(n);i+=6) 
+    {        
+ if(n%i==0 || n%(i+2)==0)
+ return 0;           
+  }   
+  return 1; 
+} 
+int main() {
+     /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+  unsigned long n;   
+  scanf("%lu",&n); 
+    if(isprime(n))     {
+         printf("yes");    
+ }   
+  else    
+ {         
+printf("no");  
+   }    
+ return 0; 
+}
