@@ -1,0 +1,28 @@
+Q-10) The function accepts a positive integer array ‘array’ of size ’n’ as its argument. Implement the function to find the Jackal elements in the array and return their sum. An element is a Jackal in the array if it is STRICTLY greater than all the elements to its right side. the rightmost element is always a Jackal. Input Format Complete the given Function Constraints The answer would lie in Integer range. Output Format Return the sum of the Jackal elements of the array Sample Input 0
+ 5 5 4 3 2 1 
+Sample Output 0
+ 15
+
+CODE:
+#include <bits/stdc++.h>
+ using namespace std;
+ int main() {
+ int n,i,j,s=0,flag=0; 
+cin>>n; 
+int arr[n];
+ for(i=0;i<n;i++)
+ cin>>arr[i];
+ for(i=0;i<n-1;i++) {
+flag=0;
+ for(j=i+1;j<n;j++) { 
+if(arr[i]<arr[j]) { 
+flag=1;
+ break;
+ } }
+ if(flag==0) 
+s=s+arr[i];
+ }
+ s+=arr[n-1];
+ cout<<s; 
+return 0;
+ }
