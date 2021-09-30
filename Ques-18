@@ -1,0 +1,38 @@
+Q-18) Write a program to input 2 variables and determine which one is greater or if they are equal.
+Input Format
+Two numbers A and B.
+Constraints
+|A|, |B| <= 1000
+Output Format
+output "valueX is greater" where X is 1 if A is greater and X is 2 if B is greater. If A is equal to B then output "both values are equal".
+Sample Input 0
+15 7
+Sample Output 0
+value1 is greater
+Sample Input 1
+50 60
+Sample Output 1
+value2 is greater
+Sample Input 2
+96 96
+Sample Output 2
+both values are equal
+
+CODE:
+#Include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main() {
+    int a,b;
+    scanf("%d%d",&a,&b);
+    if(a>b)
+        printf("value1 is greater");
+    else
+        if(a<b)
+            printf("value2 is greater");
+    else
+     printf("both values are equal");
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
