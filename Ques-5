@@ -1,0 +1,46 @@
+Q-5)  You are given Q different queries. Each query consists of one number each i.e. N. You are to write a program that, for each query tests whether the number is prime or not. You must output Q different lines to stdout, ith line being "yes" if the N for ith query is a prime number and "no" otherwise. Input Format First line contains one integer, the number of queries Q. Next Q lines contain one integer each, the N for the queries. Constraints 1 <= Q <= 10^5 1 <= N <= 10^5 Output Format Output Q lines, on each line you must print "yes" or "no" depending on the primality of the N in the query. Sample Input 0 
+5
+ 1
+ 2
+ 3
+ 4
+ 5
+ Sample Output 0
+ No
+ Yes
+ Yes
+ No
+ Yes
+
+
+CODE:
+#include <stdio.h>
+ #include <string.h> 
+#include <math.h>
+ #include <stdlib.h>
+ int isprime(unsigned long n) {   
+  if(n==2 || n==3) 
+return 1;    
+ if(n==1 || n%2==0 || n%3==0) 
+return 0;  
+   for(unsigned long i=5;i<=sqrt(n);i+=6)     {   
+      if(n%i==0 || n%(i+2)==0) 
+return 0;   
+  }   
+  return 1;
+ }
+ int main() {  
+   /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+   unsigned long n,x;    
+ scanf("%lu",&n);     
+while(n--)     {      
+   scanf("%lu",&x);   
+      if(isprime(x))         {       
+      printf("yes\n");     
+    }       
+  else{          
+   printf("no\n");     
+    }     }   
+  return 0;
+ }
+
