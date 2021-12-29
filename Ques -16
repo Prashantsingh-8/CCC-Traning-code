@@ -17,6 +17,8 @@ Sample Output 0
 Explanation 0
 Values of a, b and c are 30, 25 and 50. 2a + b - c is hence 35.
 
+
+
 CODE:
 #include <cmath>
  #include <cstdio> 
