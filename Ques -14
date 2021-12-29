@@ -10,6 +10,7 @@ Each test case contains a number N <= 1000000000
 Output Format:
 Print the total number of all such prime numbers which are less than or equal to N.
 
+
 Code:
 #include <stdio.h> 
 #include <math.h> 
