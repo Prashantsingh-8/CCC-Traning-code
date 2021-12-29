@@ -46,7 +46,6 @@ Now final sum will be
 
 
 
-
 CODE:
 #include <bits/stdc++.h>
 using namespace std;
