@@ -6,6 +6,7 @@ Explanation 0
  10 + 20 + 30 = 60 so we print 60.
 
 
+
 CODE:
 #include <cmath>
  #include <cstdio> 
