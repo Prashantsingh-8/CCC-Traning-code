@@ -19,6 +19,7 @@ Sample Output 2
 both values are equal
 
 CODE:
+
 #Include <stdio.h>
 #include <string.h>
 #include <math.h>
