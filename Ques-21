@@ -16,6 +16,7 @@ Sample Output 0
 63
 
 CODE:
+
 #include<stdio.h>
 #include<stdlib.h>
 int determinant(int** a)
