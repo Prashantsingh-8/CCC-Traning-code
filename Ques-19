@@ -21,6 +21,7 @@ The candidate with 1 rating gets 1 candy and candidate with rating cannot get 1 
 
 
 CODE:
+
 #include<bits/stdc++.h>
 using namespace std;
  
