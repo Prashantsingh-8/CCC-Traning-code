@@ -36,6 +36,7 @@ Sample Output 1
 00120 00190 00276
 
 Code:
+
 #include<stdio.h>
 int main()
 {
