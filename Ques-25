@@ -15,6 +15,7 @@ Sample Output 0
 
 
 CODE:
+
 #include <bits/stdc++.h>
 using namespace std;
 int countKdivPairs(int A[], int n, int K)
