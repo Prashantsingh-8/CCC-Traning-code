@@ -6,6 +6,7 @@ Q-6) Given an array of size N and an integer X, Raju wants to know how many elem
  3
 
 CODE:
+
 #include <stdio.h>
  int main() {
  int a,b,i,c=0,arr[100];
