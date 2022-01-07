@@ -2,6 +2,7 @@ Q-9) it is strictly increasing in the beginning; after that it is constant; afte
 Output Format Print "yes" if the given array is a hill. Otherwise, print "no".
 
 CODE:
+
 #include <stdio.h> 
 #include <string.h>
  #include <math.h>
